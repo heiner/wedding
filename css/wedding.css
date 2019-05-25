@@ -27,9 +27,9 @@ h6 {
     letter-spacing: 1px;
 }
 
-a         { color: #2a7ae2; text-decoration: none; }
-a:hover   { color: #000; text-decoration: underline; }
-a:visited { color: #205caa; }
+a         { color: #efefef; text-decoration: none; }
+a:hover   { color: #000; }
+a:visited { color: #eeeeee; }
 
 /* Utility */
 
@@ -182,7 +182,7 @@ blockquote.yuge {
 
 .page-content {
     padding: 30px 0;
-    background-color: #828282;
+    background-color: #a3aab0;
 }
 
 .page-content .right {

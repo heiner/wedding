@@ -1,21 +1,50 @@
 ---
 layout: wedding
 ---
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap"
+      rel="stylesheet">
+
+<script type="text/javascript">
+  function doenglish() {
+      document.getElementById("german").style.display = "none";
+      document.getElementById("english").style.display = "block";
+  }
+
+  function dogerman() {
+      document.getElementById("german").style.display = "block";
+      document.getElementById("english").style.display = "none";
+  }
+
+  document.addEventListener("DOMContentLoaded", (e) => {
+      const language = window.navigator.language;
+      if (language.startsWith("de")) {
+          dogerman();
+      } else {
+          doenglish();
+      }
+  });
+</script>
+
 <div class="page-content">
   <div class="wrap">
     <div class="home">
 
-      <blockquote class="yuge">Nadine <i class="garamond">&amp;</i> Heinrich</blockquote>
-      <div class="partial">
+      <blockquote class="yuge">Nadine
+        <i class="garamond">&amp;</i> Heinrich</blockquote>
+
+      <div class="right">
+        <a href="javascript:;" onclick="doenglish()">English</a>
+        &middot;
+        <a href="javascript:;" onclick="dogerman()">Deutsch</a>
+      </div>
+
+      <div class="partial" id="german">
         <h6>Wir heiraten</h6>
 
         <p>und laden euch herzlich ein!</p>
 
         <p>Die Trauung findet um 17 uhr auf der Finca Alaiar
         am 31. August 2019 statt.</p>
-
-        <p>Wir freuen uns auf einen tollen Tag mit euch.</p>
 
         <div class="ornament garamond">&#10087;</div>
 
@@ -24,17 +53,20 @@ layout: wedding
 
         <h6>Shuttle-Bus</h6>
 
-        Ein Shuttle-Bus bringt Euch zur Finca von folgenden Abfahrtspunkten:
+        <p>Shuttle-Busse bringen euch von Euren Unterkünften zur Finca.</p>
 
-        Gegen Ende der Feier stehen Shuttle-Busse zur Heimfahrt bereit.
+        <p>Gegen Ende der Feier stehen Shuttle-Busse zur Heimfahrt
+          bereit.</p>
 
-        <h6>Zusätzlich</h6>
+        <p>Abfahrtsorte und -zeiten findet Ihr in K&uuml;rze hier.</p>
+
+        <h6>Vor <i class="garamond">&amp;</i> nach der Hochzeit</h6>
 
         Um das Wochenende richtig mit Euch einzustimmen laden wir Euch
-        Freitag, den 30. August um 19 Uhr zum Get Together in den
+        f&uuml;r Freitag, den 30. August um 19:30 Uhr zum Get Together in den
         Bananas Playa Beach Club in Can Picafort ein.
 
-        Am Morgen nach der Trauung ist gegen 11:30 zum Ausklingen des
+        Am Morgen nach der Trauung ist gegen 11:00 zum Ausklingen des
         Wochenendes ein Brunch auf der Finca Alaiar für alle Gäste
         vorbereitet.
 
@@ -51,11 +83,17 @@ layout: wedding
 
         <h6>Adressen</h6>
 
-        <p>Alaiar Mallorca<br />
+        <p><i>Samstag &amp; Sonntag</i><br />
+        Alaiar Mallorca<br />
         Carretera Algaida, 07140 Sencelles</p>
 
-        <p>Bananas Playa<br />
+        <p><i>Freitag</i><br />
+        Bananas Playa<br />
         Carrer Marina, 07458 Can Picafort</p>
+      </div>
+
+      <div class="partial" id="english">
+        ENGLISH
       </div>
     </div>
   </div>
