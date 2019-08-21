@@ -183,6 +183,11 @@ blockquote.yuge {
 .page-content {
     padding: 30px 0;
     background-color: #a3aab0;
+    background-image: url("../nadaheiner.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .page-content .right {
